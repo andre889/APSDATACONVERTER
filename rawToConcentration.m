@@ -4,7 +4,7 @@
 %sampleTime is in seconds
 
 function concentration = rawToConcentration(counts, sampleTime)
-    
-    concentration = counts./(83.3333333333333.*sampleTime/5);
+    aerosolFlow = 83.3333333333333/5; % 5LPM/5 or 1 LPM in cc/s
+    concentration = counts./(aerosolFlow.*sampleTime);
 
 end
