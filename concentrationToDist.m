@@ -1,6 +1,8 @@
 %This program converts from concentration to log based distriubtion
 %Output is in #/cc
 %sampleTime is in seconds
+%This could be improved by fiting the unknown distriution function to a
+%polynomial. 
 
 function dist = concentrationToDist(concentration, dp)
     dist = zeros(1,length(dp));
