@@ -14,6 +14,8 @@
 %All units are in Standard SI units, kg, m, s, K and so on 
 %This function should be split into two, one giving uncorrected Diameters
 %and the other appling the correcting in https://doi.org/10.1080/02786828708959132
+%NOTE! Orginal study was for the APS 3310. Correction may not work with new
+%APS.
 
 function [Dae_corrected] = APSDensityCorrection(rhop,Dae_uncorrected)
     if(Dae_uncorrected(end) > 1.0)
